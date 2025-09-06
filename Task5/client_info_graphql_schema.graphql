@@ -1,0 +1,33 @@
+# Основные типы данных (соответствуют REST API)
+type Client {
+  id: String!
+  name: String!
+  age: Int!
+}
+
+type Document {
+  id: String!
+  type: String!
+  number: String!
+  issueDate: String
+  expiryDate: String
+}
+
+type Relative {
+  id: String!
+  relationType: String!
+  name: String!
+  age: Int
+}
+
+# Запросы (queries) - покрывают все операции REST API
+type Query {
+  # GET /clients/{id} - получение информации о клиенте по ID
+  client(id: String!): Client
+  
+  # GET /clients/{id}/documents - список документов клиента
+  clientDocuments(clientId: String!): [Document!]
+  
+  # GET /clients/{id}/relatives - информация о родственниках клиента
+  clientRelatives(clientId: String!): [Relative!]
+}
