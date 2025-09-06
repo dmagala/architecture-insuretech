@@ -1,0 +1,11 @@
+(ins)(venv)  Task2 > locust
+[2025-09-06 14:43:35,369] d-magala/INFO/locust.main: Starting Locust 2.40.1
+[2025-09-06 14:43:35,370] d-magala/INFO/locust.main: Starting web interface at http://0.0.0.0:8089, press enter to open your default browser.
+[2025-09-06 14:44:27,967] d-magala/INFO/locust.runners: Ramping to 50 users at a rate of 100.00 per second
+[2025-09-06 14:44:27,973] d-magala/INFO/locust.runners: All users spawned: {"WebsiteUser": 50} (50 total users)
+[2025-09-06 14:44:53,029] d-magala/INFO/locust.runners: Ramping to 5000 users at a rate of 100.00 per second
+[2025-09-06 14:45:42,162] d-magala/INFO/locust.runners: All users spawned: {"WebsiteUser": 5000} (5000 total users)
+[2025-09-06 14:45:45,412] d-magala/WARNING/root: CPU usage above 90%! This may constrain your throughput and may even give inconsistent response time measurements! See https://docs.locust.io/en/stable/running-distributed.html for how to distribute the load over multiple CPU cores or machines
+[2025-09-06 14:46:07,296] d-magala/WARNING/locust.runners: CPU usage was too high at some point during the test! See https://docs.locust.io/en/stable/running-distributed.html for how to distribute the load over multiple CPU cores or machines
+[2025-09-06 14:46:16,880] d-magala/INFO/locust.runners: Ramping to 50 users at a rate of 100.00 per second
+[2025-09-06 14:46:16,888] d-magala/INFO/locust.runners: All users spawned: {"WebsiteUser": 50} (50 total users)
